@@ -112,3 +112,15 @@ body {
   #portfolio {
     border-color: #0795C3;
   }
+
+  iframe {
+    /* border: darkslategray 2px solid;
+    float: center; */
+  }
+
+  #port_link {
+    /* display: flex;
+    justify-content: center;
+    align-items: stretch; */
+
+  }
