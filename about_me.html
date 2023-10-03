@@ -2,20 +2,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<script type="text/javascript"></script>
+<title>A Little About Me</title>
+<!-- <script type="text/javascript"></script> -->
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" 
         class="logo" alt="austin coding academy logo" width="">
-            <nav>
-                <a class="has-border" href="./index.html">Home</a>
-                <a class="has-border" href="./resume.html">Resume</a>
-                <a class="has-border" href="#">My Blog</a>
-                <a class="has-border" href="#">Contact Me</a>
-            </nav>
+        <nav class="nav">
+            <a class="has-border" href="./index.html">Home</a>
+            <a class="has-border" href="./resume.html">Resume</a>
+            <a class="has-border" href="./about_me.html">About Me</a>
+            <a class="has-border" href="./contact.html">Contact Me</a>
+        </nav>
+        <nav class="mobile">
+            <select name="mobile-menu" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                <option selected value=""></option>
+                <option value="./">Home</option>
+                <option value="./resume.html">Resume</option>
+                <option value="./about_me">About Me</option>
+                <option value="./contact.html">Contact Me</option>
+            </select>
+          </nav>
         </header>
     <main>
         <img src="K.T. 2.jpg" alt="Kris Templin - Full-Stack Developer" width="500" id="profile-pic"/>
@@ -23,7 +32,7 @@
         <p>Kris began working with computers in middle school, where his shop teacher let any kid who 
             could make a working computer from the scrap heap take it home.
         <br/> <br/>
-        After months of tinkering and many scrapped knuckles, Kris got that computer working, and hasn't been far from one since.
+            After months of tinkering and many scrapped knuckles, Kris got that computer working, and hasn't been far from one since.
         </p>
         <p>In the intervening years, Kris joined the military, got kicked out for having asthma, and joined the workforce. 
             He has worked for two telecoms, three software companies, and one electronics retailer. Through it all, he's supported

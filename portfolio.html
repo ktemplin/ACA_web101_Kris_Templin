@@ -17,6 +17,15 @@
                 <a class="has-border" href="#">My Blog</a>
                 <a class="has-border" href="#">Contact Me</a>
             </nav>
+            <nav class="mobile">
+                <select name="mobile-menu" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                    <option selected value=""></option>
+                    <option value="./">Home</option>
+                    <option value="./resume.html">Resume</option>
+                    <option value="./about_me">About Me</option>
+                    <option value="./contact.html">Contact Me</option>
+                </select>
+              </nav>
         </header>
         <main class="portfolio-container">
             <nav>
