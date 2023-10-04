@@ -31,17 +31,20 @@ body {
   }
   
   .portfolio-container {
-    display: flex;
+    display: inline-grid;
     grid-template-columns: 30% 65%;
     grid-template-rows: 25%;
+    grid-template-columns: repeat( auto-fill, minmax(80%, 1fr) );
+    grid-template-rows: [row1-start] 50% [row1-end] 100px [third-line] auto [last-line];
   }
   
   .container {
-    flex: 2 70%;
+    /* flex: 2 70%; */
     position:sticky;
-    width: 85%;
+    width: fill;
     padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
     padding-right: 50%;
+    
   }
   
   .responsive-iframe {
@@ -60,8 +63,8 @@ body {
   }
 
   .row-2 {
-    grid-column: 1/2;
-    grid-row: 2/4; 
+    grid-column: 2/2;
+    grid-row: 3/4;
   }
 
   /* This is an element within and element selector */ 

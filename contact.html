@@ -14,6 +14,25 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <header>
+            <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" 
+        class="logo" alt="austin coding academy logo" width="">
+        <nav class="nav">
+            <a class="has-border" href="./index.html">Home</a>
+            <a class="has-border" href="./resume.html">Resume</a>
+            <a class="has-border" href="./about_me.html">About Me</a>
+            <a class="has-border" href="./contact.html">Contact Me</a>
+        </nav>
+        <nav class="mobile">
+            <select name="mobile-menu" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                <option selected value=""></option>
+                <option value="./">Home</option>
+                <option value="./resume.html">Resume</option>
+                <option value="./about_me">About Me</option>
+                <option value="./contact.html">Contact Me</option>
+            </select>
+          </nav>
+        </header>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
